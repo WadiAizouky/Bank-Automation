@@ -1,5 +1,6 @@
 import {Page } from '@playwright/test';
 
+//Variable d'envionnement
 export const FixturePage = {
     //@ts-ignore
     page : undefined as Page,
