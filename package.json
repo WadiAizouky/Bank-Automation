@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^12.9.0",
+    "@types/pdf-parse": "^1.1.5",
     "@types/xlsx": "^0.0.35",
+    "pdf-parse": "^2.4.5",
     "playwright": "^1.61.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",

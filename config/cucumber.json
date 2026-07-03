@@ -2,11 +2,11 @@
     "default":{
 
         "paths": [
-            "src/tests/features/Activity.feature"
+            "src/tests/features/SearchTransactions.feature"
             ],
         "require": [
             "Hooks/Hook.ts",
-            "src/tests/stepsDefinitions/ActivityTest.ts"
+            "src/tests/stepsDefinitions/SearchTransactions.ts"
          ],
         "requireModule": [
           "ts-node/register"

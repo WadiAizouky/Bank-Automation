@@ -1,6 +1,6 @@
 import { Page } from '@playwright/test';
 import { test, Browser } from '@playwright/test';
-import { BeforeAll, AfterAll, Before, After, setDefaultTimeout } from '@cucumber/cucumber';
+import { BeforeAll, AfterAll, Before, After, setDefaultTimeout, context } from '@cucumber/cucumber';
 import { chromium } from 'playwright';
 import { FixturePage } from './FixturePage';
 import HomePage from '../src/IHMPages/HomePage';
@@ -48,4 +48,3 @@ setDefaultTimeout(60000);
     AfterAll( async () => {
        // await browser.close();
     });
-

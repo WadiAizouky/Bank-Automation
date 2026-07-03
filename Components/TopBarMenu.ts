@@ -33,6 +33,9 @@ export class TopBarMenu {
       case 'Online Statements':
         await this.locater.onlineStatementsTab.click()
         break
+      case 'Find Transactions':
+        await this.locater.findTransactionsTab.click()
+        break
       default:
         throw new Error('Could not find a tab with a given name')
     }

@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "account-activity;view-account-transactions",
+        "id": "search-transactions;search-account-transactions",
         "keyword": "Scenario Outline",
-        "line": 15,
-        "name": "View account transactions",
+        "line": 4,
+        "name": "Search account transactions",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7311302599
+              "duration": 6200955400
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 5,
             "name": "I am on the main page and I am logged in",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:11"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 761099
+              "duration": 821099
             }
           },
           {
@@ -36,76 +36,63 @@
             "line": 6,
             "name": "I click on Online Banking",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:18"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 203019699
+              "duration": 211676299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I click on Account Activity",
+            "name": "I click on Account Activity then I click on Search Transactions",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:24"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 306114200
+              "duration": 610109599
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 8,
-            "name": "I should see the Show Transactions page",
+            "name": "I select the account Type with Deposit",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:29"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 287399
+              "duration": 2072099
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "I select the account \"Savings\"",
+            "name": "I click on find button",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:34"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:36"
             },
             "result": {
               "status": "passed",
-              "duration": 261283300
+              "duration": 1007299
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I should have Description value \"OFFICE SUPPLY\"",
+            "name": "I should find results",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:39"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 3097323900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I should have Deposit value \"nul\"",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3161619799
+              "duration": 164499
             }
           },
           {
@@ -113,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 260900
+              "duration": 150499
             }
           }
         ],
@@ -127,108 +114,95 @@
       },
       {
         "description": "",
-        "id": "account-activity;view-account-transactions",
+        "id": "search-transactions;search-account-transactions",
         "keyword": "Scenario Outline",
-        "line": 16,
-        "name": "View account transactions",
+        "line": 13,
+        "name": "Search account transactions",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6415671800
+              "duration": 6065429000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 14,
             "name": "I am on the main page and I am logged in",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:11"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 755499
+              "duration": 445200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 15,
             "name": "I click on Online Banking",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:18"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 221893699
+              "duration": 210324899
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
-            "name": "I click on Account Activity",
+            "line": 16,
+            "name": "I click on Account Activity then I click on Search Transactions",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:24"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 415995000
+              "duration": 691363000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I select the account Type with Deposit and date 2026-07-01",
+            "match": {
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3023699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I click on find button",
+            "match": {
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2948199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "I should see the Show Transactions page",
+            "line": 19,
+            "name": "I should see no result message",
             "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:29"
+              "location": "src\\tests\\stepsDefinitions\\SearchTransactions.ts:50"
             },
             "result": {
               "status": "passed",
-              "duration": 155600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I select the account \"Checking\"",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 242166000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I should have Description value \"CHECK DEPOSIT\"",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3058130400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I should have Deposit value \"186.7\"",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3042742500
+              "duration": 2687400
             }
           },
           {
@@ -236,147 +210,24 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 122800
+              "duration": 88700
             }
           }
         ],
         "tags": [
           {
             "name": "@TNR_Login",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "account-activity;view-account-transactions",
-        "keyword": "Scenario Outline",
-        "line": 17,
-        "name": "View account transactions",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 6126795400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I am on the main page and I am logged in",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 303299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I click on Online Banking",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 191974399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I click on Account Activity",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 776297500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "I should see the Show Transactions page",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 287000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I select the account \"Credit Card\"",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 360311099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I should have Description value \"nul\"",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3018906100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I should have Deposit value \"nul\"",
-            "match": {
-              "location": "src\\tests\\stepsDefinitions\\ActivityTest.ts:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3017020900
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 218699
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TNR_Login",
-            "line": 3
+            "line": 12
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "account-activity",
+    "id": "search-transactions",
     "line": 1,
     "keyword": "Feature",
-    "name": "Account Activity",
+    "name": "Search Transactions",
     "tags": [],
-    "uri": "src\\tests\\features\\Activity.feature"
+    "uri": "src\\tests\\features\\SearchTransactions.feature"
   }
 ]

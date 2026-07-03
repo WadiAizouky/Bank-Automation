@@ -10,6 +10,7 @@ export class locater extends BasePage {
     readonly payBillsTab: Locator;
     readonly myMoneyMapTab: Locator;
     readonly onlineStatementsTab: Locator;
+    readonly findTransactionsTab: Locator;
 
     //Home page locaters
     readonly signInButton: Locator;
@@ -54,6 +55,7 @@ export class locater extends BasePage {
         this.payBillsTab = page.locator("#pay_bills_tab");
         this.myMoneyMapTab = page.locator("#money_map_tab");
         this.onlineStatementsTab = page.locator("#online_statements_tab");
+        this.findTransactionsTab = page.getByRole('link', { name: 'Find Transactions' });
 
         this.payeeDropdown = page.locator("#sp_payee");
         this.accountDropdown = page.locator("#sp_account");
